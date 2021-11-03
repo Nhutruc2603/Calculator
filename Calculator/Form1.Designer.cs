@@ -33,9 +33,9 @@ namespace Calculator
             this.lbSoB = new System.Windows.Forms.Label();
             this.lbSoa = new System.Windows.Forms.Label();
             this.lbKq = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtA = new System.Windows.Forms.TextBox();
+            this.txtB = new System.Windows.Forms.TextBox();
+            this.txtKq = new System.Windows.Forms.TextBox();
             this.btCong = new System.Windows.Forms.Button();
             this.btTru = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -85,29 +85,29 @@ namespace Calculator
             this.lbKq.TabIndex = 4;
             this.lbKq.Text = "Kết quả:";
             // 
-            // textBox1
+            // txtA
             // 
-            this.textBox1.Location = new System.Drawing.Point(135, 78);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(206, 32);
-            this.textBox1.TabIndex = 5;
+            this.txtA.Location = new System.Drawing.Point(135, 78);
+            this.txtA.Multiline = true;
+            this.txtA.Name = "txtA";
+            this.txtA.Size = new System.Drawing.Size(206, 32);
+            this.txtA.TabIndex = 5;
             // 
-            // textBox2
+            // txtB
             // 
-            this.textBox2.Location = new System.Drawing.Point(135, 126);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(206, 32);
-            this.textBox2.TabIndex = 6;
+            this.txtB.Location = new System.Drawing.Point(135, 126);
+            this.txtB.Multiline = true;
+            this.txtB.Name = "txtB";
+            this.txtB.Size = new System.Drawing.Size(206, 32);
+            this.txtB.TabIndex = 6;
             // 
-            // textBox3
+            // txtKq
             // 
-            this.textBox3.Location = new System.Drawing.Point(135, 174);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(206, 32);
-            this.textBox3.TabIndex = 7;
+            this.txtKq.Location = new System.Drawing.Point(135, 174);
+            this.txtKq.Multiline = true;
+            this.txtKq.Name = "txtKq";
+            this.txtKq.Size = new System.Drawing.Size(206, 32);
+            this.txtKq.TabIndex = 7;
             // 
             // btCong
             // 
@@ -118,6 +118,7 @@ namespace Calculator
             this.btCong.TabIndex = 8;
             this.btCong.Text = "+";
             this.btCong.UseVisualStyleBackColor = true;
+            this.btCong.Click += new System.EventHandler(this.btCong_Click);
             // 
             // btTru
             // 
@@ -136,9 +137,9 @@ namespace Calculator
             this.ClientSize = new System.Drawing.Size(370, 285);
             this.Controls.Add(this.btTru);
             this.Controls.Add(this.btCong);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtKq);
+            this.Controls.Add(this.txtB);
+            this.Controls.Add(this.txtA);
             this.Controls.Add(this.lbKq);
             this.Controls.Add(this.lbSoa);
             this.Controls.Add(this.lbSoB);
@@ -156,9 +157,9 @@ namespace Calculator
         private System.Windows.Forms.Label lbSoB;
         private System.Windows.Forms.Label lbSoa;
         private System.Windows.Forms.Label lbKq;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtA;
+        private System.Windows.Forms.TextBox txtB;
+        private System.Windows.Forms.TextBox txtKq;
         private System.Windows.Forms.Button btCong;
         private System.Windows.Forms.Button btTru;
     }
